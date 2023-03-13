@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>回顾性研究和前瞻性研究</title>
+      <link href="/2023/03/13/%E5%9B%9E%E9%A1%BE%E6%80%A7%E7%A0%94%E7%A9%B6/"/>
+      <url>/2023/03/13/%E5%9B%9E%E9%A1%BE%E6%80%A7%E7%A0%94%E7%A9%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、研究方法分类">一、研究方法分类</h2><p>主要分为回顾性研究和前瞻性研究</p><h3 id="1-前瞻性研究">1. 前瞻性研究</h3><p>它是一种由因及果，从现在看未来的研究路线，以队列研究为代表</p><h3 id="2-回顾性研究">2. 回顾性研究</h3><p>它是一种由果及因，从现在回顾过去的研究方法，以病例对照为代表</p><ul><li><p>其在心理学、医学研究常常被采用！</p></li><li><p>对象:</p><ul><li>以往临床积累下来的病例: 根据其在过去某个时点的特征或暴露情况入选并分组</li><li>然后从已有记录来进行追溯</li><li>从那时开始到之后的某一个时点 或 是到研究当时的这段时间里病例的情况</li></ul></li><li><p>根据病例的情况进行整理分析、总结经验、找出规律、指导临床实践</p></li><li><p>特点:</p><ul><li>可以发现以往临床工作中取得的成就</li><li>也可以发现存在的问题</li><li>为前瞻性研究提供课题</li><li>并且还能显示出某些病变自然进程的规律，提示前瞻性研究的方向和重点</li></ul></li><li><p>优点: 限制条件比较少</p></li><li><p>缺点: 临床资料收集时可能没有考虑到科研设计的需要</p><ul><li>数据的完整性和同质性可能无法被充分保证</li><li>造成对研究质量的一定影响</li></ul></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo自定义字体</title>
+      <link href="/2023/03/12/hexo%E9%AD%94%E6%94%B9/"/>
+      <url>/2023/03/12/hexo%E9%AD%94%E6%94%B9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、如何修改字体">一、如何修改字体</h2><p>主要分为以下三步:</p><ul><li>1.1 新建一个css文件</li></ul><p>首先在\themes\Butterfly\source\下新建一个fonts\font.css</p><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># 具体代码如下</span><br><span class="line"><span class="keyword">@charset</span> <span class="string">&quot;UTF-8&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;ruantang&quot;</span>;</span><br><span class="line">  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;/fonts/软糖初恋体.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>);</span><br><span class="line">  <span class="attribute">font-display</span>: swap;</span><br><span class="line">  <span class="comment">/* font-weight: normal;</span></span><br><span class="line"><span class="comment">  font-style: normal; */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>1.2 修改根目录下的 _config.butterfly.yml 文件</li></ul><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># 利用inject下的head进行插入 <span class="number">1.1</span>的css文件(位置任意)</span><br><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    # fonts 软糖</span><br><span class="line">    - &lt;link rel=<span class="string">&quot;stylesheet&quot;</span> href=<span class="string">&quot;/fonts/font.css&quot;</span>&gt;</span><br></pre></td></tr></table></figure><ul><li>1.3 在默认font-frmaily 里添加字体</li></ul><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"># 名字参考<span class="number">1.1</span>的<span class="attribute">font-family</span>: <span class="string">&quot;ruantang&quot;</span>;</span><br><span class="line"><span class="attribute">font</span>:</span><br><span class="line">  global-font-size:</span><br><span class="line">  code-font-size:</span><br><span class="line">  font-family: ruantang,-apple-system, BlinkMacSystemFont, <span class="string">&quot;Segoe UI&quot;</span>, <span class="string">&quot;Helvetica Neue&quot;</span>, Lato, Roboto, <span class="string">&quot;PingFang SC&quot;</span>, <span class="string">&quot;Microsoft JhengHei&quot;</span>, <span class="string">&quot;Microsoft YaHei&quot;</span>, sans-serif</span><br><span class="line">  code-font-family: consolas, Menlo, <span class="string">&quot;PingFang SC&quot;</span>, <span class="string">&quot;Microsoft JhengHei&quot;</span>, <span class="string">&quot;Microsoft YaHei&quot;</span>, sans-serif</span><br></pre></td></tr></table></figure><h2 id="二、结束啦">二、结束啦</h2><p>恭喜你完成了本阶段的修改，继续再接再厉吧~biu</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo魔改 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>考砸了小屁孩</title>
+      <link href="/2023/03/11/%E8%80%83%E7%A0%B8%E4%BA%86%E5%B0%8F%E5%B1%81%E5%AD%A9/"/>
+      <url>/2023/03/11/%E8%80%83%E7%A0%B8%E4%BA%86%E5%B0%8F%E5%B1%81%E5%AD%A9/</url>
+      
+        <content type="html"><![CDATA[<h1>哈哈哈哈~</h1><p>此处应该给小屁孩一个大逼豆~谁叫你偷懒呢！</p><h2 id="成绩">成绩</h2><p>话说很久没有接触到考试这个神奇的东西了，都有点忘记考试的痛苦和来源了…<br>但是</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 兼职小日常 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数据采集的趣事</title>
+      <link href="/2023/03/10/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E7%9A%84%E8%B6%A3%E4%BA%8B/"/>
+      <url>/2023/03/10/%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E7%9A%84%E8%B6%A3%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<div class="timeline  pink"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2023</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>03-10</p></div></div><div class='timeline-item-content'><p>食堂的人间百态</p></div></div></div><p><img src="https://cdn.jsdelivr.net/npm/ciryic/image/nav.webp" alt="睡着啦~小声点说发"></img></p><h1>数据集为什么不会自己采集</h1><p>哈哈~有趣的事情就是我看待事情的对错发生了变化…</p><h2 id="1-年龄与真假">1.年龄与真假</h2><p>简单来说，我做的实验室关于年龄的，虽然收集数据对于我来说比较困难，但是经历了一些坎坷后，逐渐走上了正轨<br>当然，为什么要说这是一件有趣的事情呢？</p><p>故事的开头要从一天下午说起，麻溜的和对象跑到打印店，借助打印机的轰鸣声和上课的脚步声，簇拥进一个本科生<br>上课的教室内，厚着脸皮让大多数的同学都拿了一份数据采集单，然后拉了一堆人进群…后来就很顺利收集到了大<br>量的有效数据，借助我的不懈努力在随后的几天也是如此，并且代码虽然出了一些bug，但是还是成功的写出了coding！</p><p>但是离奇的事情逐渐发生了，逐渐出现一些相似的数据，不难想象吧，当然是有人在&quot;摸鱼&quot;，也就是因为这些摸鱼大佬的<br>存在，所以进度开始跌跌撞撞地前行着，后来需要收集高龄人群的数据的时候，第一笔就被拒绝了，然后厚着皮下一笔，<br>嘿嘿~成功啦！在此处高举宿舍大叔！yyds，当然还有我的lilia！</p><p>后来的路上也是十分顺利，将两个校区的宿管都叨扰了一遍，成功得到了十余份数据，而后便是故事的主角啦，今天第二次<br>回收食堂阿姨的数据，昨天因为有阿姨说表格丢了，应该是没丢吧，然后看到昨天大家都拿到钱了，于是乎就想要写一写，<br>又给了她们一份，今天收到的时候，真的哭笑不得，表情只能笑嘻嘻啦~</p><p>付了四笔报酬，拿到的数据却是同一个人的文笔，你一个人穿梭时空呢？这么多年龄段，难道是 [age for _ in ages]<br>是这样吗？写一个循环取值的吗？还好有个大叔的文字是亲笔而为~虽然这次的事情无伤大雅，但是随着年龄的增加逐渐<br>增加的阅历，会在今后的社会打磨中不断地为自己屹立起一座座山脉阻挡社会的洪流~</p><h2 id="2-废话时间">2.废话时间</h2><p>今天不小心又写了一堆废话啦~也不知道这个静态hexo网页会有不会有人进来看，也没有做站点记录，太神奇啦~没想到我这个<br>穷鬼从服务器倒闭到了免费博客，哈哈哈~果然免费的东西都是最贵的！希望以后可以把静态博客转移到服务器上！冲鸭~~~<br>小蓝！加油💪🏻ヾ(◍°∇°◍)ﾉﾞ</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 陈ic的日常 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo入门到美化，再到放弃</title>
+      <link href="/2023/03/09/hexo%E6%90%AD%E5%BB%BA/"/>
+      <url>/2023/03/09/hexo%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[<p>嘿嘿！欢迎来到我的小网站，接下来我会将我的hexo搭建到主题配置进行一个较为详细的注解~</p><h2 id="一、进入Hexo">一、进入Hexo</h2><h3 id="1-配置基础环境"><a href="https://hexo.io/zh-cn/">1.配置基础环境</a></h3><p>1.1 安装npm依赖</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>1.2 hexo 创建博客<br>- blog 可以换成任何你需要的‘文件’名字</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init blog </span><br></pre></td></tr></table></figure><p>1.3 进入博客目录并启动</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h2 id="二、文章生成和编写">二、文章生成和编写</h2><h3 id="2-编写文章"><a href="https://butterfly.js.org/posts/21cfbf15/">2.编写文章</a></h3><p>2.1 hexo 创建文章</p><ul><li>‘title’: 指代文章的名字，取个自己喜欢的名字即可！</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new &#x27;title&#x27;</span><br></pre></td></tr></table></figure><p>2.2 hexo 创建导航栏nav的文章</p><ul><li>‘label name’: 可以是_config_butterfly.yml的menu里面的一个子类</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new page label_name</span><br></pre></td></tr></table></figure><p>2.3 进入文章目录编写</p><ul><li>‘注释’: 最好别用typora，可以用vscode、sublime等</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd /source/_posts/</span><br></pre></td></tr></table></figure><h2 id="三、推送文章">三、推送文章</h2><h3 id="3-推送文章"><a href="https://butterfly.js.org/posts/21cfbf15/">3.推送文章</a></h3><p>3.1 hexo 清楚缓存</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>3.2 hexo 编译源文件</p><ul><li>‘注释’: 简写 hexo g</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>3.3 hexo 本地预览</p><ul><li>‘注释’: 简写 hexo g</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>3.4 hexo 推送到git仓库（以github为例）</p><ul><li>‘注意’: 先安装npm git 依赖</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h2 id="四、附录">四、附录</h2><h3 id="4-大佬的博客">4. 大佬的博客</h3><ul><li>4.1 安知鱼：<a href="anzhiy.cn">大佬教程</a></li><li>4.2 Butterfly: <a href="https://butterfly.js.org/">官方教程</a></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的生活</title>
+      <link href="/2023/03/08/%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB/"/>
+      <url>/2023/03/08/%E6%88%91%E7%9A%84%E7%94%9F%E6%B4%BB/</url>
+      
+        <content type="html"><![CDATA[<div class="timeline  orange"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2020</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-28</p></div></div><div class='timeline-item-content'><p>一位普通人的生日</p></div></div></div><h1>我的日常</h1><p>不知道是从哪一刻开始，许多事情不会如自己的想法那样的前行…</p><h2 id="1-关于昨天">1.关于昨天</h2><p>说的酸涩点，这问题你不如去问牛，它会告诉你一切，就像草木一般，会随着岁月更迭，也会随着<br>人类的干预做出改变，不知道如何解答这个问题！</p><h2 id="2-关于此刻">2.关于此刻</h2><p>简单点就是我有点迷茫，一边是自己喜欢的事物，一边是即将面对毕业和答辩接踵而来的种种任务，<br>这些种种压迫着我朝着前方必须给出一个正确的答复！</p><h2 id="3-关于未来">3.关于未来</h2><p>我不确定我是否会继续坚持前端这个行业，对于任何事物都秉持三分热，不知道下一刻会不会继续<br>坚持下去！而且我也想考公吧，正所谓宇宙尽头是上岸，无非不是考上公务员，一切也就明了.</p><h2 id="4-关于答案">4.关于答案</h2><p>一切就交给时间吧，写下这些简短地文字，无非是已经完成hexo初步的搭建，后面的事情就交给<br>明天的自己吧，希望可以坚持把写便笺当成一种习惯吧！加油！！！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 陈ic的日常 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大专的日子</title>
+      <link href="/2023/03/07/%E5%A4%A7%E4%B8%93%E7%9A%84%E6%97%A5%E5%AD%90/"/>
+      <url>/2023/03/07/%E5%A4%A7%E4%B8%93%E7%9A%84%E6%97%A5%E5%AD%90/</url>
+      
+        <content type="html"><![CDATA[<h2 id="我的大专">我的大专</h2><div class="timeline  orange"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>2020</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>01-28</p></div></div><div class='timeline-item-content'><p>一位普通人的生日</p></div></div></div><p>‘’’<br>忘了这个月还剩几天，一节选修课，老师在台上讲解了关于中外的建筑艺术。两节课快落寞的时候，老师的音量提高了一点，淡淡地说，来某地这么久了，有空去附近的景区看看吧…<br>‘’’</p><p>那天上完课已经是下午5点多了，了了的吃完了饭，回到寝室。躺在床上的时候，打开了地图软件，看了看附近的景区。虽然这里不大，但是发现自己的足迹在这片土地上还未迈出过一步~</p><p>睡前，想了想明天的行程。早上7点迷迷糊糊的醒了，室友们还在睡觉😴，悄悄地下了床，整理好后带着把小伞出门了。如果说后来疲惫的回到寝室，还记得什么，那么大概是这一天很长~</p><p>食堂的环境和菜品都还不错。走出校门口，在站牌默默地等车，15路来的有点晚，但也还行。到了市区，换乘了2路车就到了目的地——某故里。也是后来才知道，喜欢单手拖着脑袋在靠窗的位置上靠着玻璃看着窗外。以前，出门比较赶时间⌚，没有注意到自己在公交上的这段路，也是一名旅客，但却做着旅客的事。</p><p>景区的排场很大，也比较有名，常常有中老年旅行团来此地游玩，当然也不乏各类学生组织的游玩团队。景区内除了某船需要买票，其余的景点均可凭id card出入。那天下着小雨，但是人流量还是很大，排着队进入了下一个景区，里面有很多历史展览，更多的是关于某爱国文人的文笔。<br>像素不是很好的缘故，没有留下照片。但记得在转角看到一句话：“异性，我是爱的，但我一向不敢，因为我自己明白各种缺点，我深怕辱没了对手。”后来想起来这句话，也算是慢慢地明白了。</p><p>在回去的路上，遇到很多有趣的人，即便下着雨，也照常骑着小车忙碌地穿梭于城市的各个巷落，孤独或许来源于此？</p><p>2020年的某一天，在家里翻看旧照片的时候想起了这些事情。正如李文人写的“锦瑟无端五十弦，一弦一柱思华年。”</p><p>如果你默默地看完了这些粗糙的文字，那么在接下来的大学生活里，希望你多去尝试一些自己喜欢的事情，去谈一场你喜欢的感情，去追一次你喜欢的音乐会，去见一个你相见的人…</p><p>9102年已经结束了，网络上说的18年那个除了有点热其它都很好的夏天已是过去了，好好把握当下，热爱生活。</p><p>最后，浅谈抖音，</p><p>有人说，新事物地出现应该去体验下，最初我也是这么想的。但时间久了也会深陷其中。</p><p>从午饭后，可以刷到晚饭，真的不知道时间可以这么快。后来一段时间出现了很多变美的话题…</p><p>于是，下载了keep，开始练习跑步‍♀️，开始练习瑜伽🧘‍，开始练习钢琴🎹，开始了很多很多、</p><p>时间过了一年多了，现在已经变美变瘦了，从一个2xl的胖次到现在xl的身材，身高也再上了一层楼。学会了两种乐器，学习了一门字体，学会了做菜，学会了打扮等等~</p><p>可能对于大神，我还需要学的很多，但是我在用我自己的方式去理解这个世界。还记得高中英语老师说的：“Every coin has two sides.&quot;加油吧！0202年，期待下一个两年的成长，对了这两年也懂得了图书馆的重要性，大部分时间都在里面~(●’◡’●)</p><p>我好像从大专到了研究生了</p><p>有想法可以在评论区见~</p><div class="hide-block"><button type="button" class="hide-button" style="">点击查看参考答案：    </button><div class="hide-content"><p>留下你的idea吧~</p></div></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 陈ic的日常 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
