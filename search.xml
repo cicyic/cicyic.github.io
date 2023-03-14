@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>我的Gitee之旅</title>
+      <link href="/2023/03/14/%E6%88%91%E7%9A%84Gitee%E4%B9%8B%E6%97%85/"/>
+      <url>/2023/03/14/%E6%88%91%E7%9A%84Gitee%E4%B9%8B%E6%97%85/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、关于Gitee的了解">一、关于Gitee的了解</h2><p>最初是在2021年的夏天，因为入学前加入了学习小组，所以一群人在里面推送自己每日的学习内容…</p><h3 id="1-为什么不选github">1.为什么不选github</h3><p>一方面是因为爱国、一方面是网速不好，终归是国外的东西吧，没有国内的用得安心，但是吧~<br>一路用下来，gitee的一些做法确实不符合大家的认知，处事方式有点偏激?</p><h3 id="2-现在不选gitee">2.现在不选gitee</h3><p>要说现在不选择gitee的主要原因就是限制条件太多了，如果只是简单的用来当自己的代码托管，倒是无碍<br>但是有几个人没有点Hexo这样的博客的需求呢？所以，在pages这个残缺的管理机制下，我不得不放弃了我曾<br>热爱的gitee，再见啦~</p><h2 id="二、关于现在的选择">二、关于现在的选择</h2><p>接下去应该是继续选择github+cdn进行加速啦，用梯子进行上网吧，虽然不知道写下这些算不算违法，但是自己<br>的idea也是需要阐明的！毕竟这只是个人的选择罢了~愿往后的华夏能发展的更好，工具只是一种选择，但心怀和<br>热爱是长存在红色文化下的延续！</p><p>午安: 该吃饭去啦~biu ba！</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>习大大14大讲话</title>
       <link href="/2023/03/13/%E4%B9%A0%E5%A4%A7%E5%A4%A714%E5%A4%A7%E8%AE%B2%E8%AF%9D/"/>
       <url>/2023/03/13/%E4%B9%A0%E5%A4%A7%E5%A4%A714%E5%A4%A7%E8%AE%B2%E8%AF%9D/</url>
@@ -40,7 +53,7 @@
       
         <tags>
             
-            <tag> hexo-magic </tag>
+            <tag> Hexo-美化 </tag>
             
         </tags>
       
@@ -94,6 +107,12 @@
         <content type="html"><![CDATA[<p>嘿嘿！欢迎来到我的小网站，接下来我会将我的hexo搭建到主题配置进行一个较为详细的注解~</p><h2 id="一、进入Hexo">一、进入Hexo</h2><h3 id="1-配置基础环境"><a href="https://hexo.io/zh-cn/">1.配置基础环境</a></h3><p>1.1 安装npm依赖</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure><p>1.2 hexo 创建博客<br>- blog 可以换成任何你需要的‘文件’名字</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo init blog </span><br></pre></td></tr></table></figure><p>1.3 进入博客目录并启动</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd blog</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><h2 id="二、文章生成和编写">二、文章生成和编写</h2><h3 id="2-编写文章"><a href="https://butterfly.js.org/posts/21cfbf15/">2.编写文章</a></h3><p>2.1 hexo 创建文章</p><ul><li>‘title’: 指代文章的名字，取个自己喜欢的名字即可！</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new &#x27;title&#x27;</span><br></pre></td></tr></table></figure><p>2.2 hexo 创建导航栏nav的文章</p><ul><li>‘label name’: 可以是_config_butterfly.yml的menu里面的一个子类</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo new page label_name</span><br></pre></td></tr></table></figure><p>2.3 进入文章目录编写</p><ul><li>‘注释’: 最好别用typora，可以用vscode、sublime等</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ cd /source/_posts/</span><br></pre></td></tr></table></figure><h2 id="三、推送文章">三、推送文章</h2><h3 id="3-推送文章"><a href="https://butterfly.js.org/posts/21cfbf15/">3.推送文章</a></h3><p>3.1 hexo 清楚缓存</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure><p>3.2 hexo 编译源文件</p><ul><li>‘注释’: 简写 hexo g</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>3.3 hexo 本地预览</p><ul><li>‘注释’: 简写 hexo g</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>3.4 hexo 推送到git仓库（以github为例）</p><ul><li>‘注意’: 先安装npm git 依赖</li></ul><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><h2 id="四、附录">四、附录</h2><h3 id="4-大佬的博客">4. 大佬的博客</h3><ul><li>4.1 安知鱼：<a href="anzhiy.cn">大佬教程</a></li><li>4.2 Butterfly: <a href="https://butterfly.js.org/">官方教程</a></li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> Hexo-入门 </tag>
+            
+        </tags>
       
     </entry>
     
